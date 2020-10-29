@@ -78,7 +78,7 @@ It is also advised to initialize by default your field to prevent some bugs rela
 
 You can see the following serialized object in your inspector :
 
-![alt text](https://github.com/Mabbutnem/polymorphic-unity/images/serialized.png?raw=true)
+![alt text](https://github.com/Mabbutnem/polymorphic-unity/blob/images/serialized.png?raw=true)
 
 You can choose the class you want to serialize using the dropdown :
 
