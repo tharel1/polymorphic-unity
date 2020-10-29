@@ -78,11 +78,11 @@ It is also advised to initialize by default your field to prevent some bugs rela
 
 You can see the following serialized object in your inspector :
 
-![alt text](https://github.com/Mabbutnem/polymorphic-unity/blob/images/serialized.png?raw=true)
+![missing image](https://github.com/Mabbutnem/polymorphic-unity/blob/images/serialized.png?raw=true)
 
 You can choose the class you want to serialize using the dropdown :
 
-[IMAGE]
+![missing image](https://github.com/Mabbutnem/polymorphic-unity/blob/images/dropdown.png?raw=true)
 
 ### List in inspector
 
