@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1585539f504fad4989dc8e8641a81cd, type: 3}
+  m_Name: ScriptableObjectExample
+  m_EditorClassIdentifier: 
+  single:
+    id: 0
+  many:
+  - id: 1
+  - id: 2
+  references:
+    version: 1
+    00000000:
+      type: {class: Foo, ns: , asm: Assembly-CSharp}
+      data:
+        field1: 0
+        field2: 
+    00000001:
+      type: {class: Foo1, ns: , asm: Assembly-CSharp}
+      data:
+        field1: 0
+        field2: 
+        field3: 0
+    00000002:
+      type: {class: Foo2, ns: , asm: Assembly-CSharp}
+      data:
+        field1: 0
+        field2: 
+        field4: 0
