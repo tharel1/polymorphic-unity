@@ -1,4 +1,4 @@
-# Polymorphic Unity Inspector
+# Polymorphic Unity
 
 Unity inspector lack on support polymorphism. This library allow you, for a parent class, to define all the children you want to use in the inspector and serialize their field dynamically depending on the current child choosen.
 
@@ -99,7 +99,7 @@ public class MonoBehaviorExample : MonoBehaviour
 
 Before playing with his fields, be sure to click on the dropdown child selector to create a new instance of this object.
 
-## Advanced use
+## Advanced usage
 
 ### Data resilience
 
