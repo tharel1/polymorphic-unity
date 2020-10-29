@@ -15,6 +15,7 @@ Unity inspector lack on support polymorphism. This library allow you, for a pare
 ## Installation
 
 Copy files from Assets/Editor/Plugins/Polymorph into your Assets/Editor/Plugins/Polymorph path of your project.
+
 Then, copy files from Assets/Scripts/Plugins/Polymorph into your Assets/Scripts/Plugins/Polymorph path of your project.
 
 ## Usage
