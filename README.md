@@ -99,5 +99,11 @@ public class MonoBehaviorExample : MonoBehaviour
 
 Before playing with his fields, be sure to click on the dropdown child selector to create a new instance of this object.
 
+## Advanced use
+
+### Data resilience
+
+### Factories
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
