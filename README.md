@@ -58,7 +58,7 @@ public class Foo2 : Foo
 ```
 The base class Foo must be ```[Serializable]``` and implement the ```IPolymorphic``` interface.
 
-Then, to define available childrens for your Foo class, you have to add the ```Polymorphic``` attribute with the right types in it. In this example, childrens are Foo, Foo1 and Foo2.
+Then, to define available childrens for your Foo class, you have to add the ```Polymorphic``` attribute with the right types in it. In this example, types are Foo, Foo1 and Foo2.
 
 ### Use in inspector
 
@@ -72,7 +72,7 @@ public class MonoBehaviorExample : MonoBehaviour
 }
 ```
 
-You MUST add the ```[SerializeReference]``` attribute to your field to be able to use polymorphism.
+You MUST add the ```[SerializeReference]``` attribute to your declaration to be able to use polymorphism.
 
 It is also advised to initialize by default your field to prevent some bugs related to the ```[SerializeReference]``` attribute. In this example, singleFoo is initialized by default to ```new Foo()```.
 
@@ -80,7 +80,7 @@ You can see the following serialized object in your inspector :
 
 ![missing image](https://github.com/Mabbutnem/polymorphic-unity/blob/images/serialized.png?raw=true)
 
-You can choose the class you want to serialize using the dropdown :
+You can choose the type you want to serialize using the dropdown :
 
 ![missing image](https://github.com/Mabbutnem/polymorphic-unity/blob/images/dropdown.png?raw=true)
 
@@ -95,7 +95,7 @@ public class MonoBehaviorExample : MonoBehaviour
    public List<Foo> manyFoos = new List<Foo>();
 }
 ```
-:warning: Carreful ! The ```[SerializeReference]``` attribute in List brings an unwanted behavior. The same reference of the nearest top object will be used when adding new element to a list.
+:warning: Carreful ! The ```[SerializeReference]``` attribute in List brings an unwanted behavior. The reference of the nearest top object will be used when adding new element to a list.
 
 Before playing with his fields, be sure to click on the dropdown child selector to create a new instance of this object.
 
