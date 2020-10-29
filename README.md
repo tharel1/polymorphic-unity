@@ -95,7 +95,7 @@ public class MonoBehaviorExample : MonoBehaviour
    public List<Foo> manyFoos = new List<Foo>();
 }
 ```
-:warning: Carreful ! The ```[SerializeReference]``` attribute in List brings an unwanted behavior. The reference of the nearest top object will be used when adding new element to a list.
+:warning: Warning ! The ```[SerializeReference]``` attribute in List brings an unwanted behavior. The reference of the nearest top object will be used when adding new element to a list.
 
 Before playing with his fields, be sure to click on the dropdown child selector to create a new instance of this object.
 
@@ -153,7 +153,7 @@ public class Foo1Factory : IPolymorphFactory<Foo1>
 
 The factory pattern is particularly useful when you want one of your child to be a Singleton. In this example, the Foo1 class will share the same instance in all the application.
 
-You have to set a ```PolymorphFactory``` to your child and specify the factory type you want to use. Then, you create a factory class that implement the interface ```IPolymorphFactory<YourChildClass>```. Finally, you implement the method ```CreatePolymorph``` according to your needs.
+You have to set a ```[PolymorphFactory]``` to your child and specify the factory type you want to use. Then, you create a factory class that implement the interface ```IPolymorphFactory<YourChildClass>```. Finally, you implement the method ```CreatePolymorph``` according to your needs.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
