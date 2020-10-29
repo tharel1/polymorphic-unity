@@ -331,23 +331,20 @@ MonoBehaviour:
     id: 1
   singleBaz:
     id: 2
-  manyFoos: []
   references:
     version: 1
     00000000:
-      type: {class: Foo, ns: , asm: Assembly-CSharp}
+      type: {class: Foo, ns: chickengames.polymorphicexample, asm: Assembly-CSharp}
       data:
-        field1: 0
-        field2: 
+        field1: 10
+        field2: value
     00000001:
-      type: {class: Bar, ns: , asm: Assembly-CSharp}
+      type: {class: Bar, ns: chickengames.polymorphicexample, asm: Assembly-CSharp}
       data:
-        name: aa
-        age: 4
+        field1: 20
+        field2: resilient value
     00000002:
-      type: {class: Baz2, ns: , asm: Assembly-CSharp}
-      data:
-        value: 100
+      type: {class: Baz1, ns: chickengames.polymorphicexample, asm: Assembly-CSharp}
 --- !u!4 &1884982593
 Transform:
   m_ObjectHideFlags: 0

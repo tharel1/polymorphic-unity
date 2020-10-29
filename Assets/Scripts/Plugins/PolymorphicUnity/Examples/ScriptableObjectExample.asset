@@ -14,25 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   single:
     id: 0
-  many:
-  - id: 1
-  - id: 2
+  many: []
   references:
     version: 1
     00000000:
-      type: {class: Foo, ns: , asm: Assembly-CSharp}
+      type: {class: Foo, ns: chickengames.polymorphicexample, asm: Assembly-CSharp}
       data:
-        field1: 0
-        field2: 
-    00000001:
-      type: {class: Foo1, ns: , asm: Assembly-CSharp}
-      data:
-        field1: 0
-        field2: 
-        field3: 0
-    00000002:
-      type: {class: Foo2, ns: , asm: Assembly-CSharp}
-      data:
-        field1: 0
-        field2: 
-        field4: 0
+        field1: 10
+        field2: This will be duplicated by the list below !
