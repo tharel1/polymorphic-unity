@@ -129,7 +129,7 @@ You have to implement ```IPolymophic<YourBaseClass>``` instead of ```IPolymorphi
 
 ### Factories
 
-Polymorphic Unity uses the default constructor to create objects. If you want to use a different strategy to initialize your object, you can use the factory pattern :
+Polymorphic Unity uses the default constructor of your classes to create objects. If you want to use a different strategy to initialize your object, you can use the factory pattern :
 
 ```csharp
 // Base class ommited...
