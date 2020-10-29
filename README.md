@@ -125,7 +125,7 @@ public class Foo : IPolymorphic<Foo>
 }
 ```
 
-You have to implement ```IPolymophic<YourBaseClass>``` instead of ```IPolymorphic```, initialize the fields of your new created object in the ```ConvertPolymorph``` method and return it.
+You have to implement ```IPolymophic<YourBaseClass>``` instead of ```IPolymorphic```. In your ```ConvertPolymorph``` method, you have to initialize the fields of your new created object with the current one and return it.
 
 ### Factories
 
