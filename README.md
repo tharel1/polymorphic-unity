@@ -103,6 +103,30 @@ Before playing with his fields, be sure to click on the dropdown child selector 
 
 ### Data resilience
 
+If you want your common fields saved between each selection in inspector, you can implement the following pattern :
+
+```csharp
+[Serializable]
+[Polymorphic(
+    typeof(Foo),
+    typeof(Foo1),
+    typeof(Foo2)
+)]
+public class Foo : IPolymorphic<Foo>
+{
+    // Fields ommited...
+    
+    public Foo ConvertPolymorph(Foo t)
+    {
+        t.field1 = field1;
+        t.field2 = field2;
+        return t;
+    }
+}
+```
+
+You have to implement ```IPolymophic<YourBaseClass>``` instead of ```IPolymorphic```, initialize the fields of your new created object in the ```ConvertPolymorph``` method and return it.
+
 ### Factories
 
 ## License
