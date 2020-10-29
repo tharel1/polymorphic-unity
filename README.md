@@ -1,6 +1,6 @@
 # Polymorphic Unity
 
-Unity inspector lack on support polymorphism. This library allow you, for a parent class, to define all the children you want to use in the inspector and serialize their field dynamically depending on the current child choosen.
+Unity inspector lack on support polymorphism. This library allow you, to define all the children class of a base class. The inspector will serialize their fields dynamically depending on the current choosen child.
 
 :white_check_mark: Supports :
 * Concrete class, abstract class and interface parent.
