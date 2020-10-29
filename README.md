@@ -103,7 +103,7 @@ Before playing with his fields, be sure to click on the dropdown child selector 
 
 ### Data resilience
 
-If you want your common fields be saved between each selection in the inspector, you can implement the following pattern :
+If you want your common fields to be saved between each selection in the inspector, you can implement the following pattern :
 
 ```csharp
 [Serializable]
