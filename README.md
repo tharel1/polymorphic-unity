@@ -3,7 +3,7 @@
 Unity inspector lack on support polymorphism. This library allow you, to define all the children class of a base class. The inspector will serialize their fields dynamically depending on the current choosen child.
 
 :white_check_mark: Supports :
-* Concrete class, abstract class and interface parent.
+* Concrete base class, abstract base class and base interface.
 * MonoBehavior and ScriptableObject inspectors.
 * Nested polymorphic objects.
 * List of polymorphic objects.
