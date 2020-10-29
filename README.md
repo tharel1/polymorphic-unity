@@ -129,5 +129,31 @@ You have to implement ```IPolymophic<YourBaseClass>``` instead of ```IPolymorphi
 
 ### Factories
 
+Polymorphic Unity uses the default constructor to create objects. If you want to use a different strategy to initialize your object, you can use the factory pattern :
+
+```csharp
+// Base class ommited...
+
+[PolymorphFactory(typeof(Foo1Factory))]
+public class Foo1 : Foo
+{
+    // Singleton
+    private Foo1() { }
+    public static Foo1 Instance { get; } = new Foo1();
+}
+
+public class Foo1Factory : IPolymorphFactory<Foo1>
+{
+    public Foo1 CreatePolymorph()
+    {
+       return Foo1.Instance;
+    }
+}
+```
+
+The factory pattern is particularly useful when you want one of your child to be a Singleton. In this example, the Foo1 class will share the same instance in all the application.
+
+You have to set a ```PolymorphFactory``` to your child and specify the factory type you want to use. Then, you create a factory class that implement the interface ```IPolymorphFactory<YourChildClass>```. Finally, you implement the method ```CreatePolymorph``` according to your needs.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
